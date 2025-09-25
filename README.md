@@ -1,7 +1,9 @@
 # Starter Page
 
+## Download
 [Download the latest release](https://github.com/alessiopelliccione/starter-page/releases/download/v1.0.0/starter_page.zip) or clone the repository to get started immediately.
 
+## Scope
 A personal start page designed to replace the default browser new tab. It combines a fast, tag-aware search with a glassmorphism inspired layout so you can jump to work links instantly.
 
 ## Features
