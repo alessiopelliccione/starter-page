@@ -12,7 +12,7 @@ A personal start page designed to replace the default browser new tab. It combin
 ## Getting Started
 1. Clone or download this repository.
 2. Open `index.html` directly in your browser (no build step required).
-3. Edit `favorites.js` to match your bookmarks. Use `favorites.template.js` if you need a skeleton for regenerating the file with an assistant.
+3. Copy `favorites.template.js` to `favorites.js` (this file is ignored by git) and customise it with your bookmarks.
 
 ### Running a local server (optional)
 While the page works from `file://`, running a lightweight server allows future enhancements that might rely on fetch requests. From the project root:
@@ -22,6 +22,8 @@ python3 -m http.server 8000
 ```
 
 Then visit <http://localhost:8000>.
+
+> `favorites.js` is listed in `.gitignore`, so your personal links stay local by default. Commit only the template or generated files you intend to share.
 
 ## Data Structure
 `favorites.js` exports `window.STARTER_FAVORITES`, an array of categories. Each category may contain:
