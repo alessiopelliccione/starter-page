@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background" aria-hidden="true"></div>
+  <main class="layout">
+    <header class="hero">
+      <p class="subtitle">Alessio's start page</p>
+      <h1 class="title">Personal bookmarks and daily links.</h1>
+      <p class="description">Type to filter by name, tags, or description. Results update as you go.</p>
+      <div class="search-wrapper">
+        <input type="search" id="search" name="search" placeholder="Search bookmarks..." autocomplete="off" aria-label="Search bookmarks" />
+        <div class="search-hint" aria-hidden="true">
+          Use #tag to match tags • Press Enter to open the first result
+        </div>
+      </div>
+    </header>
+
+    <section class="results" aria-live="polite" aria-busy="false">
+      <div class="cards" id="cards"></div>
+    </section>
+  </main>
+
+  <template id="card-template">
+    <a class="card" target="_blank" rel="noopener noreferrer">
+      <div class="card-content">
+        <div class="card-meta">
+          <span class="card-pin" aria-hidden="true">★</span>
+          <span class="card-domain"></span>
+        </div>
+        <h3 class="card-title"></h3>
+        <p class="card-description"></p>
+        <ul class="card-tags"></ul>
+      </div>
+    </a>
+  </template>
+
+  <script src="favorites.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
