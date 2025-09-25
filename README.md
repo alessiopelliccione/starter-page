@@ -12,7 +12,11 @@ A personal start page designed to replace the default browser new tab. It combin
 ## Getting Started
 1. Clone or download this repository.
 2. Open `index.html` directly in your browser (no build step required).
-3. Copy `favorites.template.js` to `favorites.js` (this file is ignored by git) and customise it with your bookmarks.
+3. Copy `favorites.template.js` to `favorites.js` (this file is ignored by git) and customise it with your bookmarks:
+
+```bash
+cp favorites.template.js favorites.js
+```
 
 ### Running a local server (optional)
 While the page works from `file://`, running a lightweight server allows future enhancements that might rely on fetch requests. From the project root:
